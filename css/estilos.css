@@ -88,12 +88,34 @@ header {
     transform: rotateZ(0deg);
   }
   to {
-    border: 2px;
+    border: 2px solid black;
     box-shadow: 4px 4px 4px #82c3a6;
     transform: rotateZ(10deg);
   }
 }
+.segunda img {
+  border: 0.01 solid black;
+  box-shadow: 0px 0px 0px #d5c75f;
+  transform: rotateZ(0deg);
+  transition-property: border box-shadow transform;
+}
 .segunda img:hover {
-  animation-name: animacion-paisajes;
-  animation-duration: 2s;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px #82c3a6;
+  transform: rotateZ(10deg);
+}
+
+.tercera img{
+  border: 0.01 solid black;
+  position: relative;
+  left: 0px;
+  box-shadow: 0px 0px 0px #d5c75f;
+  transition-property: border position box-shadow;
+}
+.tercera img:hover {
+  border: 2px solid black;
+  position: relative;
+  left: 40px;
+  top: -10px;
+  box-shadow: 4px 4px 4px #82c3a6;
 }
