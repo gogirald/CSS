@@ -1,6 +1,13 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Dancing Script;
+  background-color: #02010a;
+
+}
+
 header {
   width: 100%;
-  display: inline;
   background-color: #5b7989;
   color: white;
   float: left;
@@ -11,21 +18,26 @@ header {
 @media screen {
   #menu {
     text-align: right;
+    font-size:20px;
+    //background-color: #5b7989;
   }
   a {
     text-decoration:underline;
+    color: white;
   }
 
   .actual {
     text-decoration: none;
+    color: white;
+  }
+  a:visited {
+    color:orange;
   }
 }
 
 #central {
   width: 100%;
   background-color: #82c3a6;
-  margin: 0px auto;
-  display: block;
 }
 
 #central img {
@@ -120,5 +132,9 @@ header {
   box-shadow: 4px 4px 4px #82c3a6;
 }
 #pie {
-  
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
 }
