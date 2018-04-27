@@ -35,6 +35,10 @@ header {
 }
 
 @media screen and (max-width:600px) {
+  #contenedor1{
+    width: 100%;
+    background-color: #d5c75f;
+  }
   #secundaria {
     width: 80%;
     margin: 0 auto;
@@ -53,6 +57,10 @@ header {
   }
 }
 @media screen and (min-width:601px) {
+  #contenedor1{
+    width: 100%;
+    background-color: #d5c75f;
+  }
   #secundaria {
     width: 80%;
     margin: 0 auto;
