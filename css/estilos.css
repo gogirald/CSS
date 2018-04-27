@@ -33,46 +33,42 @@ header {
   margin: 0px auto;
   display: block;
 }
-@media screen and (min-width:480px) {
-  #secundaria {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-  .segunda img{
-    width: 50%;
-    margin: 0px;
-    display: flex;
-  }
-  .tercera img{
-    width: 50%;
-    margin: 0px;
-    display: flex;
-  }
-}
+
 @media screen and (max-width:600px) {
   #secundaria {
     width: 80%;
     margin: 0 auto;
-    display: block;
   }
-  .segunda img{
+  .segunda {
     width: 100%;
   }
-  .tercera img{
+  .segunda img {
+    width: 100%;
+  }
+  .tercera {
+    width: 100%;
+  }
+  .tercera img {
     width: 100%;
   }
 }
 @media screen and (min-width:601px) {
   #secundaria {
     width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
   }
-  .segunda img{
+  .segunda {
     width: 50%;
-    float:left;
   }
-  .tercera img{
-    width: 50%;
-    float: right;
+  .segunda img {
+    width: 100%;
+  }
+  .tercera {
+    width: 50%
+  }
+  .tercera img {
+    width: 100%;
   }
 }
