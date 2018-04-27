@@ -1,8 +1,78 @@
 header {
   width: 100%;
+  display: inline;
   background-color: #5b7989;
   color: white;
   float: left;
   text-shadow: 2px 2px 2px #02010a;
   border-radius: 10px 10px 0 0;
+}
+
+@media screen {
+  #menu {
+    text-align: right;
+  }
+  a {
+    text-decoration:underline;
+  }
+
+  .actual {
+    text-decoration: none;
+  }
+}
+
+#central {
+  width: 100%;
+  background-color: #82c3a6;
+  margin: 0px auto;
+  display: block;
+}
+
+#central img {
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+}
+@media screen and (min-width:480px) {
+  #secundaria {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .segunda img{
+    width: 50%;
+    margin: 0px;
+    display: flex;
+  }
+  .tercera img{
+    width: 50%;
+    margin: 0px;
+    display: flex;
+  }
+}
+@media screen and (max-width:600px) {
+  #secundaria {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .segunda img{
+    width: 100%;
+  }
+  .tercera img{
+    width: 100%;
+  }
+}
+@media screen and (min-width:601px) {
+  #secundaria {
+    width: 80%;
+  }
+  .segunda img{
+    width: 50%;
+    float:left;
+  }
+  .tercera img{
+    width: 50%;
+    float: right;
+  }
 }
