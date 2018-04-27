@@ -21,18 +21,21 @@ header {
     font-size:20px;
     //background-color: #5b7989;
   }
-  a {
-    text-decoration:underline;
-    color: white;
-  }
+    a {
+      text-decoration:underline;
+      color: white;
+    }
 
-  .actual {
-    text-decoration: none;
-    color: white;
-  }
-  a:visited {
-    color:orange;
-  }
+    .actual {
+      text-decoration: none;
+      color: white;
+    }
+    a:visited {
+      color:cyan;
+    }
+    #pie > div {
+      width: 25%;
+    }
 }
 
 #central {
@@ -55,18 +58,35 @@ header {
     width: 80%;
     margin: 0 auto;
   }
-  .segunda {
+    .segunda {
+      width: 100%;
+    }
+    .segunda img {
+      width: 100%;
+    }
+    .tercera {
+      width: 100%;
+    }
+    .tercera img {
+      width: 100%;
+    }
+  #pie {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .segunda img {
-    width: 100%;
-  }
-  .tercera {
-    width: 100%;
-  }
-  .tercera img {
-    width: 100%;
-  }
+    .contacto {
+      width: 100%;
+    }
+    .terminos {
+      width: 100%;
+    }
+    .redes {
+      width: 100%;
+    }
+    .derechos {
+      width: 100%;
+    }
 }
 @media screen and (min-width:601px) {
   #contenedor1{
@@ -91,6 +111,23 @@ header {
   .tercera img {
     width: 100%;
   }
+  #pie {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+    .contacto {
+      width: 25%;
+    }
+    .terminos {
+      width: 25%;
+    }
+    .redes {
+      width: 25%;
+    }
+    .derechos {
+      width: 25%;
+    }
 }
 
 @-webkit-keyframes animacion-paisajes {
@@ -133,8 +170,13 @@ header {
 }
 #pie {
   background-color: #C6d5c5;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
   border-radius: 0 0 10px 10px;
+}
+
+.texto3 {
+  display:flex;
+  flex-direction: column;
+}
+.texto3 img{
+  vertical-align: middle;
 }
