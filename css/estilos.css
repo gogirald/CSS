@@ -1,55 +1,96 @@
 body {
-  width: 90%;
-  margin: 0 auto;
   font-family: Dancing Script;
   background-color: #02010a;
-
 }
 
 header {
   width: 100%;
   background-color: #5b7989;
   color: white;
-  float: left;
   text-shadow: 2px 2px 2px #02010a;
   border-radius: 10px 10px 0 0;
 }
 
-@media screen {
-  #menu {
-    text-align: right;
-    font-size:20px;
-    //background-color: #5b7989;
-  }
-    a {
-      text-decoration:underline;
-      color: white;
-    }
-
-    .actual {
-      text-decoration: none;
-      color: white;
-    }
-    a:visited {
-      color:cyan;
-    }
-    #pie > div {
-      width: 25%;
-    }
-}
-
 #central {
-  width: 100%;
+  width:100%;
   background-color: #82c3a6;
+
+}
+#primera {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2%;
+}
+.imagen1 {
+  width: 100%;
 }
 
-#central img {
-  width: 80%;
-  margin: 0px auto;
-  display: block;
+.imagen1 img{
+  width: 100%;
+  box-shadow:2px 2px 2px #01020a;
+}
+.segunda img{
+  box-shadow:2px 2px 2px #01020a;
+}
+.tercera img {
+  box-shadow:2px 2px 2px #01020a;
+}
+#contenedor1 img {
+  box-shadow:2px 2px 2px #01020a;
 }
 
-@media screen and (max-width:600px) {
+.paisaje1 {
+  -webkit-filter:blur(10px);
+  filter: blur(10px)
+}
+.paisaje2 {
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+.paisaje4 {
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+.paisaje6 {
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#menu {
+  text-align: right;
+  font-size:20px;
+  background-color: #5b7989;
+}
+  a {
+    text-decoration:underline;
+    color: white;
+  }
+
+  .actual {
+    text-decoration: none;
+    color: white;
+  }
+  a:visited {
+    color:cyan;
+  }
+#contenedor1 {
+  flex-wrap: ;
+}
+#pie > div {
+  width: 25%;
+}
+
+@media screen and (max-width:900px) {
+  header {
+    text-align: center;
+  }
+  #menu {
+    text-align: center;
+  }
+  text-align: right;
+  #contenido {
+    width: 100%
+  }
   #contenedor1{
     width: 100%;
     background-color: #d5c75f;
@@ -60,15 +101,53 @@ header {
   }
     .segunda {
       width: 100%;
+      padding: 2%;
     }
     .segunda img {
       width: 100%;
     }
     .tercera {
       width: 100%;
+      padding: 2%;
     }
     .tercera img {
       width: 100%;
+    }
+    .paisaje1 {
+      width:100%;
+    }
+    .paisaje1 img {
+      width: 100%
+    }
+    .paisaje2 {
+      width:100%;
+    }
+    .paisaje2 img{
+      width:100%;
+    }
+    .paisaje3 {
+      width:100%;
+    }
+    .paisaje3 img{
+      width:100%;
+    }
+    .paisaje4 {
+      width:100%;
+    }
+    .paisaje4 img{
+      width:100%;
+    }
+    .paisaje5 {
+      width:100%;
+    }
+    .paisaje5 img{
+      width:100%;
+    }
+    .paisaje6 {
+      width:100%;
+      }
+    .paisaje6 img{
+      width:100%;
     }
   #pie {
     width: 100%;
@@ -88,29 +167,94 @@ header {
       width: 100%;
     }
 }
-@media screen and (min-width:601px) {
+@media screen and (min-width:901px) {
+  header {
+    text-align: left;
+  }
+  #menu {
+    text-align: right;
+  }
+  #contenido {
+    width: 900px;
+    margin: 0 auto;
+  }
   #contenedor1{
     width: 100%;
     background-color: #d5c75f;
+    display: flex;
+    flex-flow: row wrap;
   }
   #secundaria {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
   }
   .segunda {
-    width: 50%;
+    width: 45%;
+    padding: 2%;
   }
   .segunda img {
     width: 100%;
   }
   .tercera {
-    width: 50%
+    width: 45%;
+    padding: 2%;
   }
   .tercera img {
     width: 100%;
   }
+
+  .paisaje1 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje1 img {
+    width: 100%
+  }
+  .paisaje2 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje2 img{
+    width:100%;
+  }
+  .paisaje3 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje3 img{
+    width:100%;
+  }
+  .paisaje4 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje4 img{
+    width:100%;
+  }
+  .paisaje5 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje5 img{
+    width:100%;
+  }
+  .paisaje6 {
+    width:30%;
+    margin: auto;
+    padding: 1%;
+  }
+  .paisaje6 img{
+    width:100%;
+  }
+
+
   #pie {
     width: 100%;
     display: flex;
@@ -133,7 +277,6 @@ header {
 @-webkit-keyframes animacion-paisajes {
   from {
     border: 0.01 solid black;
-    box-shadow: 0px 0px 0px #d5c75f;
     transform: rotateZ(0deg);
   }
   to {
@@ -144,7 +287,6 @@ header {
 }
 .segunda img {
   border: 0.01 solid black;
-  box-shadow: 0px 0px 0px #d5c75f;
   transform: rotateZ(0deg);
   transition-property: border box-shadow transform;
 }
@@ -158,7 +300,6 @@ header {
   border: 0.01 solid black;
   position: relative;
   left: 0px;
-  box-shadow: 0px 0px 0px #d5c75f;
   transition-property: border position box-shadow;
 }
 .tercera img:hover {
