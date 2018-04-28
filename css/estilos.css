@@ -47,6 +47,10 @@ header {
   -webkit-filter:grayscale(100%);
   filter: grayscale(100%);
 }
+.paisaje3 {
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
 .paisaje4 {
   -webkit-filter:grayscale(100%);
   filter: grayscale(100%);
@@ -274,17 +278,6 @@ header {
     }
 }
 
-@-webkit-keyframes animacion-paisajes {
-  from {
-    border: 0.01 solid black;
-    transform: rotateZ(0deg);
-  }
-  to {
-    border: 2px solid black;
-    box-shadow: 4px 4px 4px #82c3a6;
-    transform: rotateZ(10deg);
-  }
-}
 .segunda img {
   border: 0.01 solid black;
   transform: rotateZ(0deg);
@@ -320,4 +313,19 @@ header {
 }
 .texto3 img{
   vertical-align: middle;
+}
+@keyframes aparicion {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+body {
+  animation-name: aparicion;
+  animation-duration: 1s;
 }
